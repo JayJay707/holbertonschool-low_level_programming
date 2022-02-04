@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - Prints pairs of 2 2-digits numbers without repeats (00 01, 00 02, 00 03,...)
+ *main - Prints pairs (00 01, 00 02...); no repeats
  *Return: Always 0 (Success)
  */
 
@@ -16,7 +16,7 @@ int main(void)
 	{
 		for (ones = '0'; ones <= '9'; ones++)
 		{
-		 	for (t = tens; t <= '9'; t++) /*print second of pair*/
+			for (t = tens; t <= '9'; t++) /*print second of pair*/
 			{
 				for (o = ones + 1; o <= '9'; o++)
 				{
