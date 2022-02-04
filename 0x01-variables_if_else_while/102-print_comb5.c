@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - Prints all num pair combinations of 2 2-digit numbers but no repeats (00 01, 00 02, 00 03,...)
+ *main - Prints pairs of 2 2-digits numbers without repeats (00 01, 00 02, 00 03,...)
  *Return: Always 0 (Success)
  */
 
