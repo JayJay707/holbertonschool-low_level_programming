@@ -33,4 +33,12 @@ void print_alphabet_x10(void);
 
 int _islower(int c);
 
+/**
+ * _isalpha - Checks if character is alphabetical
+ * @c: character to check
+ * Return: 1 if true, 0 if false
+ */
+
+int _isalpha(int c);
+
 #endif
