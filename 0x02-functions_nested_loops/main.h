@@ -87,4 +87,13 @@ void times_table(void);
 
 int add(int a, int b);
 
+/**
+ * print_to_98 - Prints from any integer to 98
+ * @n: integer input
+ *
+ * Return: void
+ */
+
+void print_to_98(int n);
+
 #endif
