@@ -49,4 +49,12 @@ int _isalpha(int c);
 
 int print_sign(int n);
 
+/**
+ * _abs - Returns absolute value of an integer
+ * @n: Integer argument
+ * Return: Absolute value
+ */
+
+int _abs(int n);
+
 #endif
