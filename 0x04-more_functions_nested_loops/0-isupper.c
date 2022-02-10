@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _isupper - Checks for uppercase char
- * @c = char to be checked
+ * _isupper - Checks for uppercase character
+ * @c: Char to be checked
  * Return: 1 if true, 0 if false
  */
 
