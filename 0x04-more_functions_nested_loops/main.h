@@ -58,4 +58,11 @@ void more_numbers(void);
 
 void print_line(int n);
 
+/**
+ * print_diagonal - Prints a diagonal line with \
+ * @n: Length of the line
+ */
+
+void print_diagonal(int n);
+
 #endif /* MAIN_H */
