@@ -45,4 +45,10 @@ void print_numbers(void);
 
 void print_most_numbers(void);
 
+/**
+ * more_numbers - Prints  numbers 0-14 ten times
+ */
+
+void more_numbers(void);
+
 #endif /* MAIN_H */
