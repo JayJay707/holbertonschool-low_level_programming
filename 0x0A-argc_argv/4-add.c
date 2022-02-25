@@ -1,10 +1,9 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 
 /**
- * main - add
+ * main - prints sum of args positive numbers
  * @argc: argument count
  * @argv: argument array
  * Return: Always 0
@@ -18,7 +17,7 @@ int main(int argc, char *argv[])
 	{
 		for (j = 0; argv[i][j]; j++)
 		{
-			if (isdigit(argv[i][j] == 0)
+			if (isdigit(argv[i][j]) == 0)
 			{
 				printf("Error\n");
 				return (1);
