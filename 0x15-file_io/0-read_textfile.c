@@ -4,13 +4,14 @@
  * read_textfile - reads a text file and prints the letters
  * @filename: filename.
  * @letters: numbers of letters printed.
+ *
  * Return: numbers of letters printed. It fails, returns 0.
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, rd, wd;
-	char *buff = malloc(sizeof(char) * letters);
+	int fd;
+	ssize_t nrd, nwr;
+	char *buf;
 
 	if (!filename)
 		return (0);
@@ -20,10 +21,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 		return (0);
 
-	rd = read(fd, buff, letters);
-	wd = write(STDOUT_FILENO, buff, rd);
+	buf = malloc(sizeof(char) * (letters));
+	if (!buf)
+		return (0);
+
+	nrd = read(fd, buf, letters);
+	nwr = write(STDOUT_FILENO, buf, nrd);
 
 	close(fd);
-	free(buff);
-	return (wd);
+
+	free(buf);
+
+	return (nwr);
 }
